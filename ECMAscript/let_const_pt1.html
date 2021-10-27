@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Let e Constantes </title>
+</head>
+<body>
+    <script>
+        //Escopos: global, função e bloco
+
+        var serie = "The Big Bang Theory"
+
+        console.log('global: ', serie )
+
+        function escopoFuncao(){
+            var serie2 = 'How I Met Your Mother'
+            console.log('global: ', serie2)
+        }
+
+        escopoFuncao()
+
+        if(true){
+            if(true){
+                var serie = 'Game of Thrones'
+            }
+        }
+
+        console.log('global: ', serie)
+
+    </script>
+
+</body>
+</html>
